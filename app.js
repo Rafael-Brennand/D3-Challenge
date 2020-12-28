@@ -22,7 +22,7 @@ var chart = svg.append("g")
     .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
 //Import the data using d3
-d3.csv("../data.csv").then(function(dataset) {
+d3.csv("StarterCode/assets/data/data.csv").then(function(dataset) {
     //Run a for each to get all the columns we will use
     dataset.forEach(function(data) {
         data.obesity = +data.obesity;
